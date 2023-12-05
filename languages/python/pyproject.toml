@@ -11,9 +11,6 @@ version = "0.1"
 description = "My package description"
 readme = "README.md"
 requires-python = ">=3.7"
-packages = [
-    { include = "BitwardenClient", from = "." }
-]
 
 [tool.setuptools.rust_ext]
 name = "bitwarden_py"
