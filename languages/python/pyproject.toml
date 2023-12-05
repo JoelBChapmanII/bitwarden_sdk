@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "setuptools-rust", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+name = "BitwardenClient"
+version = "0.1"
+packages = [
+    { include = "BitwardenClient", from = "." }
+]
+
+[tool.setuptools.rust_ext]
+name = "bitwarden_py"
+path = "../../crates/bitwarden-py/Cargo.toml"
+binding = ["pyo3"]
