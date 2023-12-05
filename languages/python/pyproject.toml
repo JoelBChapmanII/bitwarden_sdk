@@ -12,7 +12,7 @@ requires-python = ">=3.7"
 [tool.setuptools]
 packages = ["BitwardenClient"]
 
-[tool.setuptools.rust_ext]
+[[tool.setuptools-rust.ext-modules]]
 name = "bitwarden_py"
 path = "../../crates/bitwarden-py/Cargo.toml"
 binding = ["pyo3"]
