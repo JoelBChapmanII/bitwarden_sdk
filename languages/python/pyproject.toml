@@ -2,15 +2,15 @@
 requires = ["setuptools", "setuptools-rust", "wheel"]
 build-backend = "setuptools.build_meta"
 
-[tool.setuptools.packages.find]
-where = ["BitwardenClient"]
-
-[tool.setuptools]
+[project]
 name = "BitwardenClient"
 version = "0.1"
 description = "My package description"
 readme = "README.md"
 requires-python = ">=3.7"
+
+[tool.setuptools]
+packages = ["BitwardenClient"]
 
 [tool.setuptools.rust_ext]
 name = "bitwarden_py"
